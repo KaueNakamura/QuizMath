@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuizMath - Lobby</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-page="lobby">
+  <main class="container">
+    <section class="stack">
+      <h1 class="center">Sala Aberta</h1>
+      <div class="card stack">
+        <div class="item"><strong>Sala:</strong> <span id="roomNameView">-</span></div>
+        <div class="item"><strong>Professor:</strong> <span id="teacherNameView">-</span></div>
+        <div class="item">
+          <strong>Codigo de acesso:</strong>
+          <div id="roomCodeView" class="room-code">----</div>
+        </div>
+      </div>
+      <div class="card stack">
+        <h2>Alunos na sala</h2>
+        <div id="studentsList" class="list"></div>
+      </div>
+      <div class="actions">
+        <button id="startActivityBtn" class="btn ok" type="button">Iniciar Teste</button>
+        <button id="deleteRoomBtn" class="btn err" type="button">Deletar sala</button>
+      </div>
+      <div id="feedback" class="status info"></div>
+      <div class="actions">
+        <a class="btn" href="../index.html">Voltar para inicio</a>
+      </div>
+    </section>
+  </main>
+  <script src="../perguntas/equacao1grau.browser.js"></script>
+  <script defer src="../flow.js"></script>
+</body>
+</html>

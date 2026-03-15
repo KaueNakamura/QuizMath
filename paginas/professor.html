@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuizMath - Professor</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-page="professor">
+  <main class="container">
+    <section class="stack">
+      <h1 class="center">Entrar como Professor</h1>
+      <div class="card stack">
+        <form id="professorForm" class="form">
+          <label for="professorName">Nome do professor</label>
+          <input id="professorName" class="input" type="text" maxlength="40" placeholder="Digite o nome do professor" required>
+
+          <label for="roomName">Nome da sala</label>
+          <input id="roomName" class="input" type="text" maxlength="60" placeholder="Ex: 1o Ano A" required>
+
+          <button class="btn ok" type="submit">Abrir sala</button>
+        </form>
+        <div id="feedback" class="status info"></div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="../index.html">Voltar para inicio</a>
+      </div>
+    </section>
+  </main>
+  <script src="../perguntas/equacao1grau.browser.js"></script>
+  <script defer src="../flow.js"></script>
+</body>
+</html>

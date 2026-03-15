@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuizMath - Aluno</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-page="aluno">
+  <main class="container">
+    <section class="stack">
+      <h1 class="center">Entrar como Aluno</h1>
+      <div class="card stack">
+        <form id="alunoForm" class="form">
+          <label for="studentName">Nome do aluno</label>
+          <input id="studentName" class="input" type="text" maxlength="40" placeholder="Digite o nome do aluno" required>
+
+          <label for="roomCode">Codigo da sala</label>
+          <input id="roomCode" class="input code" type="text" maxlength="4" placeholder="Ex: A1B2" required>
+
+          <button class="btn ok" type="submit">Entrar</button>
+        </form>
+        <div id="feedback" class="status info"></div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="../index.html">Voltar para inicio</a>
+      </div>
+    </section>
+  </main>
+  <script defer src="../flow.js"></script>
+</body>
+</html>
